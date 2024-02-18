@@ -9,7 +9,7 @@
  */
 void swap_elements(int *array, size_t i, size_t j)
 {
-	size_t tmp;
+	int tmp;
 
 	tmp = array[i];
 	array[i] = array[j];
