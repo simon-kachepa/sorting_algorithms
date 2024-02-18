@@ -7,7 +7,7 @@
  * @j: The index of the second element
  * Return: Nothing (void)
  */
-void swap_elements(int *array, size_t i, size_t j)
+void swap_elements(int *array, int i, int j)
 {
 	int tmp;
 
