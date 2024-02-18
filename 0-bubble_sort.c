@@ -31,7 +31,7 @@ void bubble_sort(int *array, size_t size)
 	{
 		for (index = 0; index < size - sorted_el - 1; index++)
 		{
-			if (array[index] >= array[index + 1])
+			if (array[index] > array[index + 1])
 			{
 				swap_elements(array, index, index + 1);
 				print_array(array, size);
