@@ -20,7 +20,7 @@ void swap_elements(int *array, size_t i, size_t j)
  * bubble_sort - function that sorts an array of integers in ascending
  * order using the Bubble sort algorithm
  * @array: array of integers
- * size: The size of the array
+ * @size: The size of the array
  * Return: Nothing (void)
  */
 void bubble_sort(int *array, size_t size)
@@ -29,7 +29,7 @@ void bubble_sort(int *array, size_t size)
 
 	for (sorted_el = 0; sorted_el < size - 1; sorted_el++)
 	{
-		for (index = 0; index < size - sorted_el; index++)
+		for (index = 0; index < size - sorted_el - 1; index++)
 		{
 			if (array[index] > array[index + 1])
 			{
