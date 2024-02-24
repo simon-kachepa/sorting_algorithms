@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
@@ -25,8 +26,8 @@ void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
 	printf("[right]: ");
 	print_array(subarr + mid, back - mid);
 
-	for (min = front, num = mid; min < mid && num < back; k++)
-		buff[k] = (subarr[min] < subarr[num]) ? subarr[min++] : subarr[num++];
+	for (min = front, num = mid; min < mid && num < back; hal++)
+		buff[hal] = (subarr[min] < subarr[num]) ? subarr[min++] : subarr[num++];
 	for (; min < mid; min++)
 		buff[hal++] = subarr[min];
 	for (; num < back; num++)
